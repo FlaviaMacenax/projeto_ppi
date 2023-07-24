@@ -1,3 +1,22 @@
+<?php
+session_start();
+
+$ni= 0;
+$_SESSION['itens'] = array();
+$valorTotal = 0.0;
+
+if(isset($_POST['comprar'])){
+for($i = 0; $i < 10; $i++){
+    if(isset($_POST['ch'.$i])){
+        $c = $ni;
+        $desc = $_POST['desc'.$i];
+        $qtd = $_POST['qtd'.$i];
+        $valor = $_POST['vl'.$i];
+        }
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -68,6 +87,27 @@
                 <td><input type="text" name="desc6" value="Pulseira de Pérolas" readonly></td>
                 <td><input type="number" name="qtd6" value="0"></td>
                 <td><input type="text" name="vl6" value="500,00" readonly></td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td><input type="checkbox" name="ch7"></td>
+                <td><input type="text" name="desc7" value="Colar Folheado a ouro - Infantil" readonly></td>
+                <td><input type="number" name="qtd7" value="0"></td>
+                <td><input type="text" name="vl7" value="300,00" readonly></td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td><input type="checkbox" name="ch8"></td>
+                <td><input type="text" name="desc8" value="Gargantilha de Prata de Coração" readonly></td>
+                <td><input type="number" name="qtd8" value="0"></td>
+                <td><input type="text" name="vl8" value="200,00" readonly></td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td><input type="checkbox" name="ch9"></td>
+                <td><input type="text" name="desc9" value="Conjunto de Colar e Brinco de Safira" readonly></td>
+                <td><input type="number" name="qtd9" value="0"></td>
+                <td><input type="text" name="vl9" value="800,00" readonly></td>
             </tr>
             <tr>
                 <td colspan="5"><input type="submit" name="comprar" value="Comprar"></td>
