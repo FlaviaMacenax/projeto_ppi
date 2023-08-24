@@ -54,6 +54,10 @@ footer p, h3, a{
     font-family: 'Prata', serif;
 }
 
+footer p, h3{
+    color: #EDE4DF;
+}
+
 .redes{
     margin-top: -20px;
 }
