@@ -29,12 +29,12 @@
 
     <!--Carrossel-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="carrosel.css" />
+    <link rel="stylesheet" type="text/css" href="carrossel.css" />
 
   <!-- Script -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="./js/bootstrap.js"> </script>
-  <script src="carrosel.js"></script>
+  <script src="carrossel.js"></script>
   
     <div id="carousel" class="carousel slide" data-ride="carousel">
 
