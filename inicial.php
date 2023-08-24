@@ -23,57 +23,63 @@
      <!--Cabeçalho-->
      <header class="container">
             <div class="logo">
-               <img src="imagens/logo.png" width="150" height="auto" alt="logo da Isiarah">
+               <img src="imagens/logo.png" width="200" height="auto" alt="logo da Isiarah">
             </div> 
-        </header>
+     </header>
 
-    <!--Página inicial-->
-    <section class="slider">
-        <div class="slider-content">
+    <!--Carrossel-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="carrosel.css" />
 
-            <input type="radio" name="btn-radio" id="radio1">
-            <input type="radio" name="btn-radio" id="radio2">
-            <input type="radio" name="btn-radio" id="radio3">
-            <input type="radio" name="btn-radio" id="radio4">
-            <input type="radio" name="btn-radio" id="radio5">
-            <input type="radio" name="btn-radio" id="radio6">
+  <!-- Script -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="./js/bootstrap.js"> </script>
+  <script src="carrosel.js"></script>
+  
+    <div id="carousel" class="carousel slide" data-ride="carousel">
 
-            <div class="slide-box primeiro">
-                <img src="imagens/slide1.png" width="888" height="554" alt="imagem com brincos">
-            </div>
-            <div class="slide-box">
-                <img src="imagens/slide2.png" width="888" height="554" alt="imagem com aneis">
-            </div>
-            <div class="slide-box">
-                <img src="imagens/slide3.png" width="888" height="554" alt="imagem com brincos">
-            </div>
-            <div class="slide-box">
-                <img src="imagens/slide4.png" width="888" height="554" alt="imagem com colares">
-            </div>
-            <div class="slide-box">
-                <img src="imagens/slide5.png" width="888" height="554" alt="imagem com brincos">
-            </div>
-            <div class="slide-box">
-                <img src="imagens/slide6.png" width="888" height="554" alt="imagem com brincos">
-            </div>
+<!--   Bullets do carrossel, se aumentar uma imagem, aumente um li e acrescento o próximo número -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel" data-slide-to="1"></li>
+    <li data-target="#carousel" data-slide-to="2"></li>
+    <li data-target="#carousel" data-slide-to="3"></li>
+    <li data-target="#carousel" data-slide-to="4"></li>
+  </ol>
 
-            <div class="nav-auto">
-                <div class="auto-btn1"></div>
-                <div class="auto-btn2"></div>
-                <div class="auto-btn3"></div>
-                <div class="auto-btn4"></div>
-                <div class="auto-btn5"></div>
-                <div class="auto-btn6"></div>
-            </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="imagens/slide1.png">
+    </div>
 
-            <div class="nav-manual">
-                <label for="radio1" class="manual-btn"></label>
-                <label for="radio2" class="manual-btn"></label>
-                <label for="radio3" class="manual-btn"></label>
-                <label for="radio4" class="manual-btn"></label>
-                <label for="radio5" class="manual-btn"></label>
-                <label for="radio6" class="manual-btn"></label>
-            </div>
+    <div class="carousel-item">
+      <img src="imagens/slide2.png">
+    </div>
+
+    <div class="carousel-item">
+      <img src="imagens/slide3.png">
+    </div>
+  
+
+  <div class="carousel-item">
+      <img src="imagens/slide4.png">
+    </div>
+
+    <div class="carousel-item">
+          <img src="imagens/slide5.png">
         </div>
-    </section>
+
+  </div> <!-- Fecha elementos dentro do carrossel -->
+  
+<!--   Controladores | Botões -->
+  <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only"> Previous </span>
+  </a>
+  <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only"> Next </span>
+  </a> 
+</div> <!-- Fim do carrossel -->
+
 </body>
