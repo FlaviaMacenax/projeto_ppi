@@ -8,15 +8,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Josefin+Sans:wght@300;400;500;700&family=Prata&display=swap" rel="stylesheet">
-    <!--Importação dos ícones-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
-    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Ícones do footer-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--Ícone da barra do navegador-->
     <link rel="icon" type="image/x-icon" href="imagens/flexicon.png">
     <!--CSS-->
     <link rel="stylesheet" type="text/css" href="isiarah.css" />
-    <link rel="stylesheet" type="text/css" href="slide.css" />
     <title>Isiarah Jewelry</title>
 </head>
 <body>
@@ -81,5 +78,62 @@
     <span class="sr-only"> Next </span>
   </a> 
 </div> <!-- Fim do carrossel -->
+
+ <!--Rodapé-->
+ <footer>
+            <div id="footer_content">
+                <div id="footer_contacts">
+                    <h1><img src="imagens/logo.png"  width="150" height="auto" alt="logo do quiz"></h1>
+                    <p class="redes">Siga nossas redes sociais:</p>
+ 
+                    <div id= "footer_social_media">
+                        <a href="https://www.instagram.com/" class="footer-link" id="instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+ 
+                        <a href="https://www.youtube.com/" class="footer-link" id="youtube">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+ 
+                        <a href="https://twitter.com/" class="footer-link" id="x">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+ 
+                <ul class="footer-list">
+                    <li>
+                        <h3>Desenvolvido por</h3>
+                    </li>
+                    <li>
+                        <a href="mailto:flavia.macena@escolar.ifrn.edu.br" class="footer-link" target="blank">Flávia Jamily</a>
+                    </li>
+                    <li>
+                        <a href="mailto:isabel.natalia@escolar.ifrn.edu.br" class="footer-link" target="blank">Isabel Natalia</a>
+                    <li>
+                        <a href="mailto:lima.sarah@escolar.ifrn.edu.br" class="footer-link" target="blank">Sarah Lima</a>
+                    </li>
+                </ul>
+ 
+                <ul class="footer-list">
+                    <li>
+                        <h3>Ficha técnica</h3>
+                    </li>
+                    <li>
+                        <p>Trabalho realizado para a disciplina de programação para internet</p>
+                    </li>
+                    <li>
+                        <p>Professor: Éberton Marinho</p>
+                    </li>
+                    <li>
+                        <p>Unidade 2</p>
+                    </li>
+                    <li>
+                        <p>IFRN- Campus Canguaretama</p>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+
 
 </body>
