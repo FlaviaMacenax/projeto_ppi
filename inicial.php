@@ -79,6 +79,22 @@
   </a> 
 </div> <!-- Fim do carrossel -->
 
+ <!--Página inicial-->
+ <section class="container secao-1">
+      <div class="texto-apresentacao">
+        <h2>CONFIRA NOSSA <br> NOVA COLEÇÃO</h2>
+        <p>Lançamentos incríveis para <br> te tornar ainda mais bela</p>
+        <!-- Botão comprar-->
+        <div class="botao">
+                <a href="compras.php">COMPRAR</a>
+        </div>
+      </div>
+      <div class="apresentacao">
+        <video src="imagens/video.mp4" width="300" height="auto" autoplay muted></video>
+      </div>
+  </section>
+
+
  <!--Rodapé-->
  <footer>
             <div id="footer_content">

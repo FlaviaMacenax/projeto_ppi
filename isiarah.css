@@ -36,6 +36,62 @@ header .logo{
     margin: auto;
 }
 
+/*Página inicial*/
+.secao-1{
+    margin-top: 75px;
+    display: flex;
+    margin-top: 100px;
+   }
+
+   .texto-apresentacao h2{
+    font-family: 'Prata', serif;
+    font-size: 35px;
+    color: #B26150;
+    margin-left: 55px;
+    margin-right: 150px;
+    margin-top: 100px;
+   }
+
+   .texto-apresentacao p{
+    font-family: 'Josefin Sans', sans-serif;
+    color:#A26F67 ;
+    font-size: 25px;
+    margin-top: 40px;
+    margin-left: 60px;
+   }
+
+   /*Botãocomprar*/
+   .botao{
+    margin-top: 50px;
+    margin-left: 165px;
+    background-color: #92a2e8;
+    display: inline-block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
+    position: static;
+    text-align: justify;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+    box-shadow: 10px 5px 5px #1C2029;
+    transition: all 0.4s ease;
+    }
+
+    .botao a{
+        color: #ffff;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+
+    .comprar a:hover{
+        color: #303650;
+        margin-left: 20px;
+        padding-right: 15px;
+    }
+
 /*Footer*/
 * {
     margin: 0;
