@@ -95,7 +95,6 @@
       </div>
   </section>
 
-
  <!--Rodapé-->
  <footer>
             <div id="footer_content">
@@ -151,6 +150,5 @@
                 </ul>
             </div>
         </footer>
-
 
 </body>
