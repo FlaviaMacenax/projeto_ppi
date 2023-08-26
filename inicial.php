@@ -33,6 +33,7 @@
   <script src="./js/bootstrap.js"> </script>
   <script src="carrossel.js"></script>
   
+  <h2 class="container titulo">Produtos mais vendidos</h2>
     <div id="carousel" class="carousel slide" data-ride="carousel">
 
 <!--   Bullets do carrossel, se aumentar uma imagem, aumente um li e acrescento o próximo número -->

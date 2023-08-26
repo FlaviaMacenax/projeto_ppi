@@ -37,6 +37,15 @@ header .logo{
 }
 
 /*Página inicial*/
+.titulo{
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: -15px;
+    font-family: 'Prata', serif;
+    color: #BF5B4B;
+    font-size: 30px;
+}
+
 .secao-1{
     margin-top: 75px;
     display: flex;
@@ -60,11 +69,11 @@ header .logo{
     margin-left: 60px;
    }
 
-   /*Botãocomprar*/
+   /*Botão comprar*/
    .botao{
     margin-top: 50px;
     margin-left: 165px;
-    background-color: #92a2e8;
+    background-color: #B26150;
     display: inline-block;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -76,7 +85,7 @@ header .logo{
     text-transform: uppercase;
     font-size: 15px;
     font-weight: bold;
-    box-shadow: 10px 5px 5px #1C2029;
+    box-shadow: 10px 5px 5px #573731;
     transition: all 0.4s ease;
     }
 
@@ -86,10 +95,14 @@ header .logo{
         transition: 0.3s;
     }
 
-    .comprar a:hover{
-        color: #303650;
+    .botao a:hover{
+        color: #F8F3E8;
         margin-left: 20px;
         padding-right: 15px;
+    }
+
+    .botao:hover{
+        background-color: #CC8C82;
     }
 
 /*Footer*/
