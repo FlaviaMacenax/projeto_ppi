@@ -116,8 +116,20 @@ header .logo{
         margin-left: 180px;
     }
 
+    .card input{
+        width: 200px;
+        height: 35px;
+        background-color: #EDE4DF;
+        font-family: 'Josefin Sans', sans-serif;
+        border: 0,2px;
+        font-size: 15px;
+    }
 
-    
+    .card p{
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 15px;
+    }
+
 /*Footer*/
 * {
     margin: 0;
@@ -137,7 +149,7 @@ footer p, h3, a{
 }
 
 footer p, h3{
-    color: #EDE4DF;
+    color: #f2edea;
 }
 
 .redes{
@@ -172,7 +184,7 @@ footer p, h3{
     justify-content: center;
     height: 2.5rem;
     width: 2.5rem;
-    color: #e5dad1;
+    color: #ffffff;
     border-radius: 50%;
     transition: all 0.4s;
 }

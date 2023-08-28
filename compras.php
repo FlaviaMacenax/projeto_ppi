@@ -72,82 +72,90 @@ for($i = 0; $i < 10; $i++){
     <form action="compras.php" method="post">
 
       <div class="itens">
-            <section class="card">
+            <div class="card produto">
                 <img src="imagens/anel brilhantes.png" width="250px" alt="Anel de brilhantes">
                 <input type="checkbox" name="ch0">
                 <input type="text" name="desc0" value="Anel de brilhantes" readonly>
+                <p>Quantidade:</p>
                 <input type="number" name="qtd0" value="0">
                 <input type="text" name="vl0" value="430.00" readonly>
-            </section>
+            </div>
 
-            <section class="card">
+            <div class="card">
                 <img src="imagens\bracelete de pérolas.png"  width="250px" alt="Bracelete de pérolas">
                 <input type="checkbox" name="ch1">
                 <input type="text" name="desc1" value="Bracelete de pérolas" readonly>
+                <p>Quantidade:</p>
                 <input type="number" name="qtd1" value="0">
                 <input type="text" name="vl1" value="535.00" readonly>
-            </section>
+            </div>
 
-            <section class="card">
+            <div class="card">
                 <img src="imagens/pingente de coração.png" width="250" alt="Pingente de coração">
                 <input type="checkbox" name="ch2">
                 <input type="text" name="desc2" value="Pingente de coração" readonly>
+                <p>Quantidade:</p>
                 <input type="number" name="qtd2" value="0">
                 <input type="text" name="vl2" value="200.00" readonly>
-            </section>
+            </div>
       </div>
 
       <div class="itens">
-
-            <section class="card">
+            <div class="card">
                 <img src="imagens\argola de prata.png"  width="250px" alt="Argola de prata com brilhantes">
                 <input type="checkbox" name="ch3">
                 <input type="text" name="desc3" value="Argola com brilhantes" readonly>
+                <p>Quantidade:</p>
                 <input type="number" name="qtd3" value="0">
                 <input type="text" name="vl3" value="980.00" readonly>
-            </section>
+            </div>
 
-            <section class="card">
+            <div class="card">
                 <img src="imagens/anel ouro rose.png" width="250px" alt="Anel de ouro rose">
                 <input type="checkbox" name="ch4">
                 <input type="text" name="desc4" value="Anel de ouro rose" readonly>
+                <p>Quantidade:</p>
                 <input type="number" name="qtd4" value="0">
                 <input type="text" name="vl4" value="550.00" readonly>
-            </section>
+            </div>
 
-            <section class="card">
+            <div class="card">
                 <img src="imagens/colar lua e estrelas.png" width="250" alt="Colar Lua e estrelas">
                 <input type="checkbox" name="ch5">
                 <input type="text" name="desc5" value="Colar Lua e estrelas" readonly>
+                <p>Quantidade:</p>
                 <input type="number" name="qtd5" value="0">
                 <input type="text" name="vl5" value="920.00" readonly>
-            </section>
+            </div>
         </div>
 
       <div class="itens">
-            <section class="card">
+            <div class="card">
                 <img src="imagens/bracelete barras brilhantes.png" width="250" alt="Bracelete de barras brilhantes">
                 <input type="checkbox" name="ch6"></td>
                 <td><input type="text" name="desc6" value="Bracelete de brilhantes" readonly></td>
+                <p>Quantidade:</p>
                 <td><input type="number" name="qtd6" value="0"></td>
                 <td><input type="text" name="vl6" value="815.00" readonly></td>
-            </section>
+            </div>
 
-            <section class="card">
+            <div class="card">
                 <img src="imagens\colar prata estrela.png"  width="250px" alt="Colar de prata Estrela ">
                 <input type="checkbox" name="ch7">
                 <input type="text" name="desc7" value="Colar de estrela" readonly>
+                <p>Quantidade:</p>
                 <input type="number" name="qtd7" value="0">
                 <input type="text" name="vl7" value="980.00" readonly>
-            </section>
+            </div>
 
-            <section class="card">
+            <div class="card">
                 <img src="imagens/brinco esfera brilhante.png" width="250" alt="Brinco de esfera com brilhantes">
                 <input type="checkbox" name="ch8">
                 <input type="text" name="desc8" value="Brinco de esfera" readonly>
+                <p>Quantidade:</p>
                 <input type="number" name="qtd8" value="0">
                 <input type="text" name="vl8" value="920.00" readonly>
-            </section>
+            </div>
         </div>
 
       <input type="submit" name="comprar" value="Comprar">
