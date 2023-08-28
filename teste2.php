@@ -68,89 +68,92 @@ for($i = 0; $i < 10; $i++){
             </div> 
      </header>
 
-     <!--Produtos-->
     <form action="compras.php" method="post">
-
-      <div class="itens">
-            <section class="card">
-                <img src="imagens/anel brilhantes.png" width="250px" alt="Anel de brilhantes">
-                <input type="checkbox" name="ch0">
-                <input type="text" name="desc0" value="Anel de brilhantes" readonly>
-                <input type="number" name="qtd0" value="0">
-                <input type="text" name="vl0" value="430.00" readonly>
-            </section>
-
-            <section class="card">
-                <img src="imagens\bracelete de pérolas.png"  width="250px" alt="Bracelete de pérolas">
-                <input type="checkbox" name="ch1">
-                <input type="text" name="desc1" value="Bracelete de pérolas" readonly>
-                <input type="number" name="qtd1" value="0">
-                <input type="text" name="vl1" value="535.00" readonly>
-            </section>
-
-            <section class="card">
-                <img src="imagens/pingente de coração.png" width="250" alt="Pingente de coração">
-                <input type="checkbox" name="ch2">
-                <input type="text" name="desc2" value="Pingente de coração" readonly>
-                <input type="number" name="qtd2" value="0">
-                <input type="text" name="vl2" value="200.00" readonly>
-            </section>
-      </div>
-
-      <div class="itens">
-
-            <section class="card">
-                <img src="imagens\argola de prata.png"  width="250px" alt="Argola de prata com brilhantes">
-                <input type="checkbox" name="ch3">
-                <input type="text" name="desc3" value="Argola com brilhantes" readonly>
-                <input type="number" name="qtd3" value="0">
-                <input type="text" name="vl3" value="980.00" readonly>
-            </section>
-
-            <section class="card">
-                <img src="imagens/anel ouro rose.png" width="250px" alt="Anel de ouro rose">
-                <input type="checkbox" name="ch4">
-                <input type="text" name="desc4" value="Anel de ouro rose" readonly>
-                <input type="number" name="qtd4" value="0">
-                <input type="text" name="vl4" value="550.00" readonly>
-            </section>
-
-            <section class="card">
-                <img src="imagens/colar lua e estrelas.png" width="250" alt="Colar Lua e estrelas">
-                <input type="checkbox" name="ch5">
-                <input type="text" name="desc5" value="Colar Lua e estrelas" readonly>
-                <input type="number" name="qtd5" value="0">
-                <input type="text" name="vl5" value="920.00" readonly>
-            </section>
-        </div>
-
-      <div class="itens">
-            <section class="card">
-                <img src="imagens/bracelete barras brilhantes.png" width="250" alt="Bracelete de barras brilhantes">
-                <input type="checkbox" name="ch6"></td>
-                <td><input type="text" name="desc6" value="Bracelete de brilhantes" readonly></td>
+        <table>
+            <tr>
+                <th colspan="5">Nossos produtos</th>
+            </tr>
+            <tr>
+                <th>#</th>
+                <th>[X]</th>
+                <th>Descrição</th>
+                <th>Quantidade</th>
+                <th>Valor</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td><input type="checkbox" name="ch0"></td>
+                <td><input type="text" name="desc0" value="Anel Ouro rose" readonly></td>
+                <td><input type="number" name="qtd0" value="0"></td>
+                <td><input type="text" name="vl0" value="550.00" readonly></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td><input type="checkbox" name="ch1"></td>
+                <td><input type="text" name="desc1" value="Argola de prata com brilhantes" readonly></td>
+                <td><input type="number" name="qtd1" value="0"></td>
+                <td><input type="text" name="vl1" value="980.00" readonly></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td><input type="checkbox" name="ch2"></td>
+                <td><input type="text" name="desc2" value="Colar Lua e estrelas" readonly></td>
+                <td><input type="number" name="qtd2" value="0"></td>
+                <td><input type="text" name="vl2" value="920.00" readonly></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td><input type="checkbox" name="ch3"></td>
+                <td><input type="text" name="desc3" value="Anel de brilhantes" readonly></td>
+                <td><input type="number" name="qtd3" value="0"></td>
+                <td><input type="text" name="vl3" value="430.00" readonly></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td><input type="checkbox" name="ch4"></td>
+                <td><input type="text" name="desc4" value="Bracelete de pérolas" readonly></td>
+                <td><input type="number" name="qtd4" value="0"></td>
+                <td><input type="text" name="vl4" value="535.00" readonly></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td><input type="checkbox" name="ch5"></td>
+                <td><input type="text" name="desc5" value="Pingente de coração" readonly></td>
+                <td><input type="number" name="qtd5" value="0"></td>
+                <td><input type="text" name="vl5" value="200.00" readonly></td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td><input type="checkbox" name="ch6"></td>
+                <td><input type="text" name="desc6" value="Bracelete Barras brilhantes" readonly></td>
                 <td><input type="number" name="qtd6" value="0"></td>
                 <td><input type="text" name="vl6" value="815.00" readonly></td>
-            </section>
-
-            <section class="card">
-                <img src="imagens\colar prata estrela.png"  width="250px" alt="Colar de prata Estrela ">
-                <input type="checkbox" name="ch7">
-                <input type="text" name="desc7" value="Colar de estrela" readonly>
-                <input type="number" name="qtd7" value="0">
-                <input type="text" name="vl7" value="980.00" readonly>
-            </section>
-
-            <section class="card">
-                <img src="imagens/brinco esfera brilhante.png" width="250" alt="Brinco de esfera com brilhantes">
-                <input type="checkbox" name="ch8">
-                <input type="text" name="desc8" value="Brinco de esfera" readonly>
-                <input type="number" name="qtd8" value="0">
-                <input type="text" name="vl8" value="920.00" readonly>
-            </section>
-        </div>
-
-      <input type="submit" name="comprar" value="Comprar">
+            </tr>
+            <tr>
+                <td>8</td>
+                <td><input type="checkbox" name="ch7"></td>
+                <td><input type="text" name="desc7" value="Colar de prata Estrela" readonly></td>
+                <td><input type="number" name="qtd7" value="0"></td>
+                <td><input type="text" name="vl7" value="600.00" readonly></td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td><input type="checkbox" name="ch8"></td>
+                <td><input type="text" name="desc8" value="Brinco Esfera de brilhantes" readonly></td>
+                <td><input type="number" name="qtd8" value="0"></td>
+                <td><input type="text" name="vl8" value="575.00" readonly></td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td><input type="checkbox" name="ch9"></td>
+                <td><input type="text" name="desc9" value="Pingente Vagalume" readonly></td>
+                <td><input type="number" name="qtd9" value="0"></td>
+                <td><input type="text" name="vl9" value="250.00" readonly></td>
+            </tr>
+            <tr>
+                <td colspan="5"><input type="submit" name="comprar" value="Comprar"></td>
+            </tr>
+        </table>
     </form>
 
     <!--Rodapé-->

@@ -105,6 +105,19 @@ header .logo{
         background-color: #CC8C82;
     }
 
+    /*Página de itens*/
+    .card{
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+        margin: 80px;
+        width: 100px;
+        height: 100px;
+        margin-left: 180px;
+    }
+
+
+    
 /*Footer*/
 * {
     margin: 0;
