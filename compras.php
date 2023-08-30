@@ -72,7 +72,7 @@ for($i = 0; $i < 10; $i++){
     <form action="compras.php" method="post">
 
       <div class="itens">
-            <div class="card produto">
+            <div class="card">
                 <img src="imagens/anel brilhantes.png" width="250px" alt="Anel de brilhantes">
                 <input type="checkbox" name="ch0">
                 <input type="text" name="desc0" value="Anel de brilhantes" readonly>
