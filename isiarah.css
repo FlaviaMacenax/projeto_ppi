@@ -69,7 +69,7 @@ header .logo{
     margin-left: 60px;
    }
 
-   /*Botão comprar*/
+   /*Botões*/
    .botao{
     margin-top: 50px;
     margin-left: 165px;
@@ -103,6 +103,35 @@ header .logo{
 
     .botao:hover{
         background-color: #CC8C82;
+    }
+
+    .comprar{
+        background-color: #CC8C82;
+        font-family: 'Prata', serif;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 15px;
+        padding-left: 15px;
+        text-align: justify;
+        border-radius: 50px;
+        border: none;
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: bold;
+        color: #f2edea;
+        box-shadow: 10px 5px 5px #573731;
+        transition: all 0.4s ease;
+        display: flex;
+        margin-left: 575px;
+        margin-top: 20px;
+    }
+
+    .comprar:hover{
+        background-color: #f2edea;
+    }
+
+    .comprar:hover{
+        color: #CC8C82;
     }
 
     /*Página de itens*/
@@ -169,6 +198,28 @@ header .logo{
     z-index: 1;
 }
 
+.secao4-div input{
+    background-color: #EDE4DF;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 15px;
+    margin-bottom: 8px;
+    width: 175px;
+    text-align: center;
+    border: none;
+}
+
+.secao4-div p{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 15px;
+}
+
+.secao4-div-1{
+    height: 375px;
+}
+
+.secao4-div img{
+    width: 175px;
+}
 
 /*Footer*/
 * {
