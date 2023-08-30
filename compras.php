@@ -68,101 +68,146 @@ for($i = 0; $i < 10; $i++){
             </div> 
      </header>
 
-     <!--Produtos-->
-    <form action="compras.php" method="post">
-
-      <div class="itens">
-            <div class="card">
-                <img src="imagens/anel brilhantes.png" width="250px" alt="Anel de brilhantes">
-                <input type="checkbox" name="ch0">
+<!-- Seção com cards -->
+<section class="secao4" id="sobre">
+    <form action="teste2.php" method="post">
+    <div class="secao4-div">
+        <div class="secao4-div-1">
+            <div class="secao4-div-1-coluna">
+                <img src="imagens/anel brilhantes.png" alt="Anel de brilhantes">
+                <div class="custom-checkbox">
+                    <input id="checkbox-0" type="checkbox" name="ch0">
+                    <label for="checkbox-0"></label></div>
                 <input type="text" name="desc0" value="Anel de brilhantes" readonly>
                 <p>Quantidade:</p>
                 <input type="number" name="qtd0" value="0">
+                <p>Preço:</p>
                 <input type="text" name="vl0" value="430.00" readonly>
             </div>
+        </div>
 
-            <div class="card">
+        <div class="secao4-div-2">
+            <div class="secao4-div-2-coluna">
                 <img src="imagens\bracelete de pérolas.png"  width="250px" alt="Bracelete de pérolas">
-                <input type="checkbox" name="ch1">
+                <div class="custom-checkbox">
+                    <input id="checkbox-1" type="checkbox" name="ch1">
+                    <label for="checkbox-1"></label></div>
                 <input type="text" name="desc1" value="Bracelete de pérolas" readonly>
                 <p>Quantidade:</p>
                 <input type="number" name="qtd1" value="0">
+                <p>Preço:</p>
                 <input type="text" name="vl1" value="535.00" readonly>
             </div>
+        </div>
 
-            <div class="card">
-                <img src="imagens/pingente de coração.png" width="250" alt="Pingente de coração">
-                <input type="checkbox" name="ch2">
+        <div class="secao4-div-3">
+            <div class="secao4-div-3-coluna">
+                <img src="imagens/pingente de coração.png" width="250px" alt="Pingente de coração">
+                <div class="custom-checkbox">
+                    <input id="checkbox-2" type="checkbox" name="ch2">
+                    <label for="checkbox-2"></label></div>
                 <input type="text" name="desc2" value="Pingente de coração" readonly>
                 <p>Quantidade:</p>
                 <input type="number" name="qtd2" value="0">
+                <p>Preço:</p>
                 <input type="text" name="vl2" value="200.00" readonly>
             </div>
-      </div>
+        </div>
+    </div>
 
-      <div class="itens">
-            <div class="card">
+    <div class="secao4-div">
+        <div class="secao4-div-1">
+            <div class="secao4-div-1-coluna">
                 <img src="imagens\argola de prata.png"  width="250px" alt="Argola de prata com brilhantes">
-                <input type="checkbox" name="ch3">
+                <div class="custom-checkbox">
+                    <input id="checkbox-3" type="checkbox" name="ch3">
+                    <label for="checkbox-3"></label></div>
                 <input type="text" name="desc3" value="Argola com brilhantes" readonly>
                 <p>Quantidade:</p>
                 <input type="number" name="qtd3" value="0">
+                <p>Preço:</p>
                 <input type="text" name="vl3" value="980.00" readonly>
             </div>
+        </div>
 
-            <div class="card">
+        <div class="secao4-div-2">
+            <div class="secao4-div-2-coluna">
                 <img src="imagens/anel ouro rose.png" width="250px" alt="Anel de ouro rose">
-                <input type="checkbox" name="ch4">
+                <div class="custom-checkbox">
+                    <input id="checkbox-4" type="checkbox" name="ch4">
+                    <label for="checkbox-4"></label></div>
                 <input type="text" name="desc4" value="Anel de ouro rose" readonly>
                 <p>Quantidade:</p>
                 <input type="number" name="qtd4" value="0">
+                <p>Preço:</p>
                 <input type="text" name="vl4" value="550.00" readonly>
             </div>
+        </div>
 
-            <div class="card">
+        <div class="secao4-div-3">
+            <div class="secao4-div-3-coluna">
                 <img src="imagens/colar lua e estrelas.png" width="250" alt="Colar Lua e estrelas">
-                <input type="checkbox" name="ch5">
+                <div class="custom-checkbox">
+                    <input id="checkbox-5" type="checkbox" name="ch5">
+                    <label for="checkbox-5"></label></div>
                 <input type="text" name="desc5" value="Colar Lua e estrelas" readonly>
                 <p>Quantidade:</p>
                 <input type="number" name="qtd5" value="0">
+                <p>Preço:</p>
                 <input type="text" name="vl5" value="920.00" readonly>
             </div>
         </div>
+    </div>
 
-      <div class="itens">
-            <div class="card">
+    <div class="secao4-div">
+        <div class="secao4-div-1">
+            <div class="secao4-div-1-coluna">
                 <img src="imagens/bracelete barras brilhantes.png" width="250" alt="Bracelete de barras brilhantes">
-                <input type="checkbox" name="ch6"></td>
-                <td><input type="text" name="desc6" value="Bracelete de brilhantes" readonly></td>
+                <div class="custom-checkbox">
+                    <input id="checkbox-6" type="checkbox" name="ch6">
+                    <label for="checkbox-6"></label></div>
+                <td><input type="text" name="desc6" value="Bracelete de brilhantes" readonly>
                 <p>Quantidade:</p>
-                <td><input type="number" name="qtd6" value="0"></td>
-                <td><input type="text" name="vl6" value="815.00" readonly></td>
-            </div>
-
-            <div class="card">
-                <img src="imagens\colar prata estrela.png"  width="250px" alt="Colar de prata Estrela ">
-                <input type="checkbox" name="ch7">
-                <input type="text" name="desc7" value="Colar de estrela" readonly>
-                <p>Quantidade:</p>
-                <input type="number" name="qtd7" value="0">
-                <input type="text" name="vl7" value="980.00" readonly>
-            </div>
-
-            <div class="card">
-                <img src="imagens/brinco esfera brilhante.png" width="250" alt="Brinco de esfera com brilhantes">
-                <input type="checkbox" name="ch8">
-                <input type="text" name="desc8" value="Brinco de esfera" readonly>
-                <p>Quantidade:</p>
-                <input type="number" name="qtd8" value="0">
-                <input type="text" name="vl8" value="920.00" readonly>
+                <td><input type="number" name="qtd6" value="0">
+                <p>Preço:</p>
+                <td><input type="text" name="vl6" value="815.00" readonly>
             </div>
         </div>
 
-      <input type="submit" name="comprar" value="Comprar">
+        <div class="secao4-div-2">
+            <div class="secao4-div-2-coluna">
+                <img src="imagens\colar prata estrela.png"  width="250px" alt="Colar de prata Estrela ">
+                <div class="custom-checkbox">
+                    <input id="checkbox-7" type="checkbox" name="ch7">
+                    <label for="checkbox-7"></label></div>
+                <input type="text" name="desc7" value="Colar de estrela" readonly>
+                <p>Quantidade:</p>
+                <input type="number" name="qtd7" value="0">
+                <p>Preço:</p>
+                <input type="text" name="vl7" value="980.00" readonly>
+            </div>
+        </div>
+
+        <div class="secao4-div-3">
+            <div class="secao4-div-3-coluna">
+                <img src="imagens/brinco esfera brilhante.png" width="250" alt="Brinco de esfera com brilhantes">
+                <div class="custom-checkbox">
+                    <input id="checkbox-8" type="checkbox" name="ch8">
+                    <label for="checkbox-8"></label></div>
+                <input type="text" name="desc8" value="Brinco de esfera" readonly>
+                <p>Quantidade:</p>
+                <input type="number" name="qtd8" value="0">
+                <p>Preço:</p>
+                <input type="text" name="vl8" value="920.00" readonly>
+            </div>
+        </div>
+    </div>
+    <input type="submit" name="comprar" value="Comprar" class="comprar">
     </form>
+</section>
 
     <!--Rodapé-->
- <footer>
+    <footer>
             <div id="footer_content">
                 <div id="footer_contacts">
                     <h1><img src="imagens/logo.png"  width="150" height="auto" alt="logo do quiz"></h1>
