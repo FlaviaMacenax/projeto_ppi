@@ -70,7 +70,7 @@ for($i = 0; $i < 10; $i++){
 
 <!-- Seção com cards -->
 <section class="secao4" id="sobre">
-    <form action="teste2.php" method="post">
+    <form action="compras.php" method="post">
     <div class="secao4-div">
         <div class="secao4-div-1">
             <div class="secao4-div-1-coluna">

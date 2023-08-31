@@ -38,132 +38,46 @@ if(isset($_POST['logar'])){
         body{
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
             background-image: url(imagens/fundo2.png);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .box{
-            display: flex;
-            margin-top: 50px;
-            padding:40px;
-        }
-
-        .img-box{
-            background-color: rgba(255, 255, 255, 0.5);
-            width: 50%;
-            display: flex;
-            align-items: center;
-            padding: 20px;
-            border-radius: 20px  0 0 20px;
-        }
-
-        .img-box img{
-            margin-left: 45px;
-        }
-
-        .form-box{
-            background-color: rgba(255, 255, 255, 0.2);
-            backdrop-filter: blur(40px);
-            padding: 30px 40px;
-            width: 50%;
-            border-radius: 0 20px 20px 0;
-        }
-
-        .form-box h2{
-            font-size: 30px;
-            color: #BB7C73;
-        }
-
-        .form-box form{
-            margin: 20px 0;
-        }
-
-        form .input-group{
-            margin-bottom: 15px;
-        }
-
-        form .input-group label{
-            color: #3D3D3D;
-            font-weight: bold;
-            display: block;
-            margin-bottom: 5px;
-        }
-
-        form .input-group input{
-            width: 100%;
-            height: 47px;
-            background-color: rgba(255, 255, 255, 0.32);
-            border-radius: 20px;
-            outline: none;
-            border: 2px solid transparent;
-            padding: 15px;
-            font-size: 15px;
-            color: #616161;
-            transition: all 0.4s ease;
-            font-family: 'Josefin Sans', sans-serif;
-        }
-
-        form .input-group input:focus{
-            border-color: #BB7C73;
-        }
-
-        form .input-group button{
-            width: 100%;
-            height: 47px;
-            background: #dcb55a;
-            border-radius: 20px;
-            outline: none;
-            border: none;
-            margin-top: 15px;
-            color: white;
-            cursor: pointer;
-            font-size: 16px;
         }
     </style>
 </head>
 <body>
-    <!--Cabeçalho-->
-    <header class="container">
-            <div class="logo">
-               <img src="imagens/logo.png" width="200px" height="auto" alt="logo da Isiarah">
-            </div> 
-     </header>
+    <form action="usuario.php" method="post">
+    <table>
+        <tr>
+            <th colspan="2">Dados do Usuário</th>
+        </tr>
+        <tr>
+            <td><i class="fa-solid fa-user"></i>Nome completo:</td>
+            <td><input type="text" name="nome"></td>
+        </tr>
+        <tr>
+            <td><i class="fa-solid fa-envelope"></i>Email:</td>
+            <td><input type="email" name="usuario"></td>
+        </tr>
+        <tr>
+            <td><i class="fa-solid fa-location-dot"></i>Endereço:</td>
+            <td><input type="text" name="endereco"></td>
+        </tr>
 
-     <!--Cadastro de usuário-->
-    <div class="box">
-        <div class="img-box">
-            <img src="imagens/compra.png" width="450px" height="auto" alt="Ícone de cadastro">
-        </div>
-        <div class="form-box">
-            <h2>Dados do usuário</h2>
-            <form action="usuario.php" method="post">
-                <div class="input-group">
-                    <label for="nome">Nome completo</label>
-                    <input type="text" id="nome" placeholder="Digite o seu nome completo" required>
-                </div>
-                <div class="input-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" placeholder="Digite o seu email" required>
-                </div>
-                <div class="input-group">
-                    <label for="telefone">Telefone</label>
-                    <input type="tel" id="telefone" placeholder="Digite o seu telefone" required>
-                </div>
-                <div class="input-group">
-                    <label for="endereco">Endereço</label>
-                    <input type="text" id="endereco" placeholder="Digite o seu endereço" required>
-                </div>
-                <div class="input-group">
-                    <input type="submit" name="logar" value="Logar">
-                </div>
-        </div>
-    </div>
+        <tr colspan="2">
+            <td colspan="5"><input type="submit" name="logar" value="Logar"></td>
+        </tr>
+    </table>
+    </form>
 
+    <table>
+        <tr>
+            <th colspan="5">Itens da Compra</th>
+        </tr>
+        <tr>
+            <th>#</th>
+            <th>Núm. Item</th>
+            <th>Descrição</th>
+            <th>Quantidade</th>
+            <th>Valor</th>
+        </tr>
         <?php
         $i = 0;
         if(isset($_SESSION['itens'])){
