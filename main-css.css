@@ -25,3 +25,15 @@ input[type=submit]{
     font-size: 25px;
     font-weight: bold;
 }
+
+.confirmacao{
+    width: 400px;
+    margin: auto;
+    margin-top: 25px;
+    border: 2px solid gray ;
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+    padding: 30px;
+    background-color: #cccccc;
+}

@@ -14,7 +14,7 @@ if(isset($_POST['pagar'])) {
         $numcartao_avista = (isset($_POST['numcartao-avista']) ? $_POST['numcartao-avista'] : "");
         $numcartao_credito = (isset($_POST['numcartao-credito']) ? $_POST['numcartao-credito'] : "");
     
-        $_SESSION['dadospag'] = array('metpag' => $metpag,
+        $_SESSION['dadospag1'] = array('metpag' => $metpag,
                                         'numcartao-avista' => $numcartao_avista,
                                         'numcartao-credito' => $numcartao_credito);
 
