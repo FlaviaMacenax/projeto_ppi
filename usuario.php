@@ -112,10 +112,10 @@ if(isset($_POST['logar'])){
             border-color: #BB7C73;
         }
 
-        form .input-group button{
+        .logar input[type="submit"]{
             width: 100%;
             height: 47px;
-            background: #dcb55a;
+            background: #CC8C82;
             border-radius: 20px;
             outline: none;
             border: none;
@@ -123,6 +123,14 @@ if(isset($_POST['logar'])){
             color: white;
             cursor: pointer;
             font-size: 16px;
+            font-family: 'Prata', serif;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #ffff; 
+            color: #CC8C82;
         }
     </style>
 </head>
@@ -158,7 +166,7 @@ if(isset($_POST['logar'])){
                     <label for="endereco">Endereço</label>
                     <input type="text" id="endereco" placeholder="Digite o seu endereço" required>
                 </div>
-                <div class="input-group">
+                <div class="logar">
                     <input type="submit" name="logar" value="Logar">
                 </div>
         </div>
