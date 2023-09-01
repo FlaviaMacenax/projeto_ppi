@@ -33,7 +33,7 @@ if(isset($_POST['logar'])){
     <link rel="icon" type="image/x-icon" href="imagens/flexicon.png">
     <!--CSS-->
     <link rel="stylesheet" type="text/css" href="isiarah.css">
-    <title>Sua compra</title>
+    <title>Minha compra</title>
     <style>
         body{
             margin: 0;
@@ -126,11 +126,61 @@ if(isset($_POST['logar'])){
             font-family: 'Prata', serif;
             text-transform: uppercase;
             font-weight: bold;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
         }
 
         input[type="submit"]:hover {
             background-color: #ffff; 
             color: #CC8C82;
+        }
+
+        .icon{
+            margin-right: 10px;
+        }
+
+        .compras{
+            display: flex;
+            justify-content: center;
+        }
+
+        .carrinho{
+            background-color: rgba(255, 255, 255, 0.35);
+            backdrop-filter: blur(40px);
+            padding: 30px 40px;
+            width: 94%;
+            border-radius: 12px;
+            color:#3D3D3D;
+        }
+
+        .carrinho h2{
+            color: #BB7C73;
+        }
+
+        table {
+            border-spacing: 15px;
+        }
+
+        th{
+            color: #ffff;
+        }
+
+        table, th, td{
+            padding: 5px 40px 5px 40px;
+        }
+
+        table{
+            display: flex;
+            justify-content: center;
+        }
+
+        td{
+            font-family: 'Josefin Sans', sans-serif;
+            font-size: 18px;
+        }
+
+        .total{
+            color: #BF877E;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -148,7 +198,7 @@ if(isset($_POST['logar'])){
             <img src="imagens/compra.png" width="450px" height="auto" alt="Ícone de cadastro">
         </div>
         <div class="form-box">
-            <h2>Dados do usuário</h2>
+        <h2><i class="fa-solid fa-user fa-beat icon"></i>Dados do usuário</h2>
             <form action="usuario.php" method="post">
                 <div class="input-group">
                     <label for="nome">Nome completo</label>
@@ -169,9 +219,23 @@ if(isset($_POST['logar'])){
                 <div class="logar">
                     <input type="submit" name="logar" value="Logar">
                 </div>
+            </form>
         </div>
     </div>
-
+    
+       <!--Carrinhos de compra-->
+       <div class="compras">
+        <div class="carrinho">
+        <h2 class="compras"><i class="fa-solid fa-cart-shopping fa-beat icon"></i>Carrinho de compras</h2>
+        <table class="compras">
+        <tr>
+        </tr>
+        <tr>
+            <th>#</th>
+            <th>Produto</th>
+            <th>Quantidade</th>
+            <th>Valor</th>
+        </tr>
         <?php
         $i = 0;
         if(isset($_SESSION['itens'])){
@@ -179,7 +243,6 @@ if(isset($_POST['logar'])){
         ?>
         <tr>
             <td><?php echo $i; ?></td>
-            <td><?php echo $item ['ni']; ?></td>
             <td><?php echo $item ['desc']; ?></td>
             <td><?php echo $item ['qtd']; ?></td>
             <td><?php echo $item ['vl']; ?></td>
@@ -189,14 +252,16 @@ if(isset($_POST['logar'])){
            }
         }
         ?>
-
+        
         <tr>
-            <th colspan="3"></th>
-            <th>Valor Total:</th>
-            <th><?php echo $_SESSION['valortotal']; ?></th>
-
+            <td></td>
+            <td></td>
+            <th class="total">Valor Total:</th>
+            <th class="total"><?php echo $_SESSION['valortotal']; ?></th>
         </tr>
     </table>   
+        </div>
+    </div>
 
     <!--Rodapé-->
     <footer>
