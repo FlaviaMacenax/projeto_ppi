@@ -6,10 +6,12 @@ foreach($_SESSION['itens'] as $item){
     echo $i .  $item['desc'] . " - " . $item['vl']."<br>";
 }*/
 if(isset($_POST['logar'])){
-    if(isset($_POST['usuario']) && isset($_POST['nome']) && isset($_POST['endereco'])){
+    if(isset($_POST['usuario']) && isset($_POST['nome']) && isset($_POST['email']) && isset($_POST['telefone']) && isset($_POST['endereco'])){
         $_SESSION['usuario'] = array(
                 'usuario' => $_POST['usuario'],
                 'nome' => $_POST['nome'],
+                'email' => $_POST['email'],
+                'telefone' => $_POST['telefone'],
                 'endereco' => $_POST['endereco']
         );
         header('Location: dadospag.php', true, 303);
@@ -201,20 +203,24 @@ if(isset($_POST['logar'])){
         <h2><i class="fa-solid fa-user fa-beat icon"></i>Dados do usuário</h2>
             <form action="usuario.php" method="post">
                 <div class="input-group">
+                    <label for="usuario">Usuário:</label>
+                    <input type="text" id="usuario" name="usuario" placeholder="Digite um nome de Usuário" required>
+                </div>
+                <div class="input-group">
                     <label for="nome">Nome completo</label>
-                    <input type="text" id="nome" placeholder="Digite o seu nome completo" required>
+                    <input type="text" id="nome" name="nome" placeholder="Digite o seu nome completo" required>
                 </div>
                 <div class="input-group">
                     <label for="email">Email</label>
-                    <input type="email" id="email" placeholder="Digite o seu email" required>
+                    <input type="email" id="email" name="email" placeholder="Digite o seu email" required>
                 </div>
                 <div class="input-group">
                     <label for="telefone">Telefone</label>
-                    <input type="tel" id="telefone" placeholder="Digite o seu telefone" required>
+                    <input type="tel" id="telefone" name="telefone" placeholder="Digite o seu telefone" required>
                 </div>
                 <div class="input-group">
                     <label for="endereco">Endereço</label>
-                    <input type="text" id="endereco" placeholder="Digite o seu endereço" required>
+                    <input type="text" id="endereco" name="endereco" placeholder="Digite o seu endereço" required>
                 </div>
                 <div class="logar">
                     <input type="submit" name="logar" value="Logar">

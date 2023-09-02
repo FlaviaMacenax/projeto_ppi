@@ -5,6 +5,8 @@ $_SESSION['dadospag'] = "";
 
 $usuario = (isset($_SESSION['usuario']['usuario'])? $_SESSION['usuario']['usuario']: "");
 $nome = (isset($_SESSION['usuario']['nome'])? $_SESSION['usuario']['nome']: "");
+$email = (isset($_SESSION['usuario']['email'])? $_SESSION['usuario']['email']: "");
+$telefone = (isset($_SESSION['usuario']['telefone'])? $_SESSION['usuario']['telefone']: "");
 $endereco = (isset($_SESSION['usuario']['endereco'])? $_SESSION['usuario']['endereco']: "");
 $valorTotal = (isset($_SESSION['valortotal'])? $_SESSION['valortotal']: "");
 
@@ -45,6 +47,14 @@ if(isset($_POST['pagar'])) {
     <tr>
         <td>Nome completo:</td>
         <td><?php echo $nome; ?></td>
+    </tr>
+    <tr>
+        <td>E-mail:</td>
+        <td><?php echo $email; ?></td>
+    </tr>
+    <tr>
+        <td>Telefone:</td>
+        <td><?php echo $telefone; ?></td>
     </tr>
     <tr>
         <td>Endereço:</td>
