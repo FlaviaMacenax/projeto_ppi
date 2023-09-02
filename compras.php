@@ -80,7 +80,7 @@ for($i = 0; $i < 10; $i++){
                     <label for="checkbox-0"></label></div>
                 <input type="text" name="desc0" value="Anel de brilhantes" readonly>
                 <p>Quantidade:</p>
-                <input type="number" name="qtd0" value="0">
+                <input min ="0" type="number" name="qtd0" value="0">
                 <p>Preço:</p>
                 <input type="text" name="vl0" value="430.00" readonly>
             </div>
@@ -94,7 +94,7 @@ for($i = 0; $i < 10; $i++){
                     <label for="checkbox-1"></label></div>
                 <input type="text" name="desc1" value="Bracelete de pérolas" readonly>
                 <p>Quantidade:</p>
-                <input type="number" name="qtd1" value="0">
+                <input min ="0" type="number" name="qtd1" value="0">
                 <p>Preço:</p>
                 <input type="text" name="vl1" value="535.00" readonly>
             </div>
@@ -108,7 +108,7 @@ for($i = 0; $i < 10; $i++){
                     <label for="checkbox-2"></label></div>
                 <input type="text" name="desc2" value="Pingente de coração" readonly>
                 <p>Quantidade:</p>
-                <input type="number" name="qtd2" value="0">
+                <input min ="0" type="number" name="qtd2" value="0">
                 <p>Preço:</p>
                 <input type="text" name="vl2" value="200.00" readonly>
             </div>
@@ -124,7 +124,7 @@ for($i = 0; $i < 10; $i++){
                     <label for="checkbox-3"></label></div>
                 <input type="text" name="desc3" value="Argola com brilhantes" readonly>
                 <p>Quantidade:</p>
-                <input type="number" name="qtd3" value="0">
+                <input min ="0" type="number" name="qtd3" value="0">
                 <p>Preço:</p>
                 <input type="text" name="vl3" value="980.00" readonly>
             </div>
@@ -138,7 +138,7 @@ for($i = 0; $i < 10; $i++){
                     <label for="checkbox-4"></label></div>
                 <input type="text" name="desc4" value="Anel de ouro rose" readonly>
                 <p>Quantidade:</p>
-                <input type="number" name="qtd4" value="0">
+                <input min ="0" type="number" name="qtd4" value="0">
                 <p>Preço:</p>
                 <input type="text" name="vl4" value="550.00" readonly>
             </div>
@@ -152,7 +152,7 @@ for($i = 0; $i < 10; $i++){
                     <label for="checkbox-5"></label></div>
                 <input type="text" name="desc5" value="Colar Lua e estrelas" readonly>
                 <p>Quantidade:</p>
-                <input type="number" name="qtd5" value="0">
+                <input min ="0" type="number" name="qtd5" value="0">
                 <p>Preço:</p>
                 <input type="text" name="vl5" value="920.00" readonly>
             </div>
@@ -168,7 +168,7 @@ for($i = 0; $i < 10; $i++){
                     <label for="checkbox-6"></label></div>
                 <td><input type="text" name="desc6" value="Bracelete de brilhantes" readonly>
                 <p>Quantidade:</p>
-                <td><input type="number" name="qtd6" value="0">
+                <td><input min ="0" type="number" name="qtd6" value="0">
                 <p>Preço:</p>
                 <td><input type="text" name="vl6" value="815.00" readonly>
             </div>
@@ -182,7 +182,7 @@ for($i = 0; $i < 10; $i++){
                     <label for="checkbox-7"></label></div>
                 <input type="text" name="desc7" value="Colar de estrela" readonly>
                 <p>Quantidade:</p>
-                <input type="number" name="qtd7" value="0">
+                <input min ="0" type="number" name="qtd7" value="0">
                 <p>Preço:</p>
                 <input type="text" name="vl7" value="980.00" readonly>
             </div>
@@ -196,7 +196,7 @@ for($i = 0; $i < 10; $i++){
                     <label for="checkbox-8"></label></div>
                 <input type="text" name="desc8" value="Brinco de esfera" readonly>
                 <p>Quantidade:</p>
-                <input type="number" name="qtd8" value="0">
+                <input min ="0" type="number" name="qtd8" value="0">
                 <p>Preço:</p>
                 <input type="text" name="vl8" value="920.00" readonly>
             </div>

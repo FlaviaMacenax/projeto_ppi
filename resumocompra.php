@@ -4,9 +4,9 @@ session_start();
 $_SESSION['dadospag'] = "";
 
 $usuario = (isset($_SESSION['usuario']['usuario'])? $_SESSION['usuario']['usuario']: "");
-$nome = (isset($_SESSION['usuario']['nome']) $_SESSION['usuario']['nome']: "");
+$nome = (isset($_SESSION['usuario']['nome'])? $_SESSION['usuario']['nome']: "");
 $email = (isset($_SESSION['usuario']['email'])? $_SESSION['usuario']['email']: "");
-$telefone = (isset($_SESSION['usuario']['telefone'])? $_SESSION['usuario']['telefone']: "");
+$telefone = (isset($_SESSION['usuario']['telefone']) ? $_SESSION['usuario']['telefone']: "");
 $endereco = (isset($_SESSION['usuario']['endereco'])? $_SESSION['usuario']['endereco']: "");
 $valorTotal = (isset($_SESSION['valortotal'])? $_SESSION['valortotal']: "");
 $metpag = (isset($_SESSION['dadospag1']['metpag'])? $_SESSION['dadospag1']['metpag']: "");
