@@ -23,12 +23,12 @@
             border-radius: 15px;
             width: 40%;
             margin-left: 500px;
-            background-color: #EDD6C9;
+            background-color: #F4E8E5 ;
             align-items: center;
             box-shadow: 10px 5px 5px #573731;
         }
         .geral:hover{
-            background-color: #F4E8E5;
+            background-color: #EDD6C9;
         }
         .confirma{;
             border-radius: 15px;
