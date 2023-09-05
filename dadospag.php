@@ -67,40 +67,33 @@ if(isset($_POST['pagar'])) {
         <p>Telefone: <?php echo $telefone; ?></p>
         <p>Endereço: <?php echo $endereco; ?></p>
       
-<form action="dadospag.php" method="post">
+<br>
+        <form action="dadospag.php" method="post">
         <h2><i class="fa-solid fa-dollar-sign fa-beat"></i>Dados do Pagamento</h2>
     
         <p>#</p>
         <p>Métodos de Pagamento</p>
         <p>Dados da Cobrança</p>
-    </tr>
-    <tr>
-        <td><input type = "radio" name = "metpag" value = "deb-avista"></td>
-        <td>Débito à Vista</td>
-        <td>Número do Cartão</td>
-        <td><input type = "text" name = "numcartao-avista"></td>
-    </tr>
-    <tr>
-        <td><input type = "radio" name = "metpag" value = "credito"></td>
-        <td>Crédito à Vista</td>
-        <td>Número do Cartão</td>
-        <td><input type = "text" name = "numcartao-credito"></td>
-    </tr>
-    <tr>
-        <td><input type = "radio" name = "metpag" value = "pix"></td>
-        <td>PIX</td>
-        <td>Número do Pix</td>
-        <td>h93u-28rb-24bd-h38v</td>
-    </tr>
-    <tr>
-        <th colspan="2"></th>
-        <th>Valor Total:</th>
-        <th><?php echo $valorTotal; ?></th>
-    </tr>
-    <tr>
-        <td colspan="4"><input type="submit" name="pagar" value="Pagar"></td>
-    </tr>
-</table>
+
+        <input type = "radio" name = "metpag" value = "deb-avista">
+        <p>Débito à Vista</p>
+        <p>Número do Cartão</p>
+        <input type = "text" name = "numcartao-avista">
+
+        <input type = "radio" name = "metpag" value = "credito">
+        <p>Crédito à Vista</p>
+        <p>Número do Cartão</p>
+        <input type = "text" name = "numcartao-credito">
+
+        <input type = "radio" name = "metpag" value = "pix">
+        <p>PIX</p>
+        <p>Número do Pix</p>
+        <p>h93u-28rb-24bd-h38v</p>
+
+        <p>Valor Total:</p>
+        <p><?php echo $valorTotal; ?></p>
+
+       <input type="submit" name="pagar" value="Pagar">
 
 </form>
 
