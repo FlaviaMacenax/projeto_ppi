@@ -55,24 +55,106 @@ if(isset($_POST['pagar'])) {
             align-items: center;
             justify-content: center;
         }
+
+        .box{
+            display: block;
+            margin-top: 50px;
+            padding:40px;
+            justify-content: center;
+            align-items: center;
+            margin-left: 215px;
+        }
+
+        .img-box{
+            background-color: rgba(255, 255, 255, 0.5);
+            width: 75%;
+            height: 295px;
+            align-items: center;
+            border-radius: 20px 20px 0 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .form-box{
+            background-color: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(40px);
+            padding: 30px 40px;
+            width: 75%;
+            height: 290px;
+            border-radius: 0 0 20px 20px;
+            padding-left: 220px;
+        }
+
+        .form-box h2{
+            font-size: 30px;
+            color: #BB7C73;
+            display: flex;
+            align-items: center;
+            margin-top: 15px;
+            margin-bottom: 25px;
+        }
+
+        .info{
+            color: #BB7C73;
+            background-color: rgba(255, 255, 255, 0.32);
+            border-radius: 20px;
+            font-family: 'Josefin Sans', sans-serif;
+            width: 75%;
+            padding-left: 8px;
+        }
+
+        table{
+            font-size: 18px;
+        }
+
+
     </style>
 </head>
-
 <body>
+         <!--Cabeçalho-->
+         <header class="container">
+            <div class="logo">
+               <img src="imagens/logo.png" width="200" height="auto" alt="logo da Isiarah">
+            </div> 
+        </header>
 
-    <h2><i class="fa-solid fa-user fa-beat icon"></i>Dados do usuário</h2>
-        <p>Usuário: <?php echo $usuario; ?></p>
-        <p>Nome completo: <?php echo $nome; ?></p>
-        <p>E-mail: <?php echo $email; ?></p>
-        <p>Telefone: <?php echo $telefone; ?></p>
-        <p>Endereço: <?php echo $endereco; ?></p>
-      
+        <div class="box">
+            <div class="img-box">
+                <img src="imagens/user.png" width="450px" height="auto" alt="Ícone de cadastro">
+            </div>
+            <div class="form-box">
+                <h2><i class="fa-solid fa-user fa-beat icon"></i>Dados do usuário</h2>
+                <table>
+                    <tr>
+                        <td>Usuário:</td>
+                        <td class="info"><?php echo $usuario; ?></td>
+                    </tr>
+                    <tr>
+                        <td>Nome:</td>
+                        <td class="info"><?php echo $nome; ?></td>
+                    </tr>
+                    <tr>
+                        <td>E-mail:</td>
+                        <td class="info"><?php echo $email; ?></td>
+                    </tr>
+                    <tr>
+                        <td>Telefone:</td>
+                        <td class="info"><?php echo $telefone; ?></td>
+                    </tr>
+                    <tr>
+                        <td>Endereço:</td>
+                        <td class="info"><?php echo $endereco; ?></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+            
 <br>
         <form action="dadospag.php" method="post">
-        <h2><i class="fa-solid fa-dollar-sign fa-beat"></i>Dados do Pagamento</h2>
+        <h2><i class="fa-solid fa-dollar-sign fa-beat"></i>Dados do pagamento</h2>
     
         <p>#</p>
-        <p>Métodos de Pagamento</p>
+        <p>Métodos de pagamento</p>
         <p>Dados da Cobrança</p>
 
         <input type = "radio" name = "metpag" value = "deb-avista">
