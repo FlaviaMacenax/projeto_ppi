@@ -10,10 +10,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel= "stylesheet" type= "text/css" media="screen" href="isiarah.css">
-    <script src="https://kit.fontawesome.com/69594d6708.js" crossorigin="anonymous"></script>
-    <title>Confirmação Compra</title>
-
+    <!--Importação da fonte-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Josefin+Sans:wght@300;400;500;700&family=Prata&display=swap" rel="stylesheet">
+    <!--Ícones do footer-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Ícone da barra do navegador-->
+    <link rel="icon" type="image/x-icon" href="imagens/flexicon.png">
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="isiarah.css">
+    <title>Confirmação da Compra</title>
     <style>
         .logo{
             margin-bottom: 40px;
@@ -96,12 +103,12 @@
         </div>
     </div>
         <div class="confirmacao">
-            <h1 class = "confirma"><i <i class="fa-regular fa-circle-check fa icon"></i>Pagamento Aprovado.</h1>
+            <h1 class = "confirma"><i class="fa-regular fa-circle-check fa icon"></i>Pagamento Aprovado.</h1>
         </div> 
     </div>
 
-    <!--Rodapé-->
-    <footer>
+     <!--Rodapé-->
+     <footer>
             <div id="footer_content">
                 <div id="footer_contacts">
                     <h1><img src="imagens/logo.png"  width="150" height="auto" alt="logo do quiz"></h1>
