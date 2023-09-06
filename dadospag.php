@@ -129,7 +129,6 @@ if(isset($_POST['pagar'])) {
         .pag-box h2{
             font-size: 30px;
             color: #BB7C73;
-            margin-top: 15px;
             margin-bottom: 25px;
             display: flex;
             justify-content: center; 
@@ -189,30 +188,41 @@ if(isset($_POST['pagar'])) {
                 <th colspan = "2">Dados da Cobrança</th>
             </tr>
             <tr>
-                <td><input type = "radio" name = "metpag" value = "deb-avista"></td>
+                <td><div class="custom-radio">
+                    <input type = "radio" name = "metpag" value ="deb-avista" id="radio-1">
+                <label for="radio-1"></label></div></td>
                 <td>Débito à Vista</td>
                 <td>Número do Cartão</td>
-                <td><input type = "text" name = "numcartao-avista"></td>
+                <td><div class="cartao">
+                    <input type = "text" name = "numcartao-avista"></div></td>
             </tr>
             <tr>
-                <td><input type = "radio" name = "metpag" value = "credito"></td>
+                <td><div class="custom-radio">
+                    <input type = "radio" name = "metpag" value ="credito" id="radio-2">
+                <label for="radio-2"></label></div></td>
+                <label for="radio-2"></label></div>
                 <td>Crédito à Vista</td>
                 <td>Número do Cartão</td>
-                <td><input type = "text" name = "numcartao-credito"></td>
+                <td><div class="cartao">
+                    <input type = "text" name = "numcartao-credito"></div></td>
             </tr>
             <tr>
-                <td><input type = "radio" name = "metpag" value = "pix"></td>
+                <td><div class="custom-radio">
+                    <input type = "radio" name = "metpag" value ="pix" id="radio-3">
+                <label for="radio-3"></label></div></td>
                 <td>PIX</td>
                 <td>Número do Pix</td>
                 <td>h93u-28rb-24bd-h38v</td>
             </tr>
             <tr>
                 <th colspan="2"></th>
-                <th>Valor Total:</th>
-                <th><?php echo $valorTotal; ?></th>
+                <th><div class="vtotal">
+                    Valor Total:</div></th>
+                <th><div class="vtotal">
+                    <?php echo $valorTotal; ?></div></th>
             </tr>
             <tr>
-                <td colspan="4"><input type="submit" name="pagar" value="Pagar"></td>
+                <td colspan="4"><div class="pagar"><input type="submit" name="pagar" value="Pagar"></div></td>
             </tr>
         </table>
         </form>

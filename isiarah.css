@@ -227,6 +227,77 @@ header .logo{
       }
 
 /*Dados do pagamento*/
+.custom-radio input{
+    display: none;
+}
+
+.custom-radio input + label:before{
+    content: '';
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.32);
+    border: 1px solid #DDAEA6;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+    margin-bottom: 3px;
+}
+
+.custom-radio input:checked + label:before {
+    background-color: #EBD1C4;
+    box-sizing: border-box;
+    border: 5px solid #D7897E;
+    padding: 4px;
+  }
+
+  .cartao input{
+    background-color: rgba(255, 255, 255, 0.32);
+    width: auto;
+    height: 15px;
+    border-radius: 20px;
+    outline: none;
+    border: 2px solid transparent;
+    padding: 15px;
+    font-size: 15px;
+    color: #616161;
+    transition: all 0.4s ease;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+
+  .cartao input:focus{
+    border-color: #BB7C73;
+  }
+
+  .vtotal{
+    color: #D7897E;
+    margin-top: 12px;
+    font-size: 23px;
+  }
+
+  .pagar input[type="submit"]{
+    width: 100%;
+    height: 47px;
+    background: #CC8C82;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    margin-top: 15px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Prata', serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+ .pagar input[type="submit"]:hover {
+    background-color: #ffff; 
+    color: #CC8C82;
+}
+
+
 
 /*Footer*/
 * {
