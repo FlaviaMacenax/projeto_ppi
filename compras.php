@@ -78,7 +78,7 @@ for($i = 0; $i < 10; $i++){
                 <div class="custom-checkbox">
                     <input id="checkbox-0" type="checkbox" name="ch0">
                     <label for="checkbox-0"></label></div>
-                <input type="text" name="desc0" value="Anel de brilhantes" readonly>
+                <input type="text" name="desc0" value="Anel de brilhantes" readonly style="font-family: 'Prata', serif; color: #B26150; font-weight: bold;">
                 <p>Quantidade:</p>
                 <input min ="0" type="number" name="qtd0" value="0">
                 <p>Preço:</p>
@@ -92,7 +92,7 @@ for($i = 0; $i < 10; $i++){
                 <div class="custom-checkbox">
                     <input id="checkbox-1" type="checkbox" name="ch1">
                     <label for="checkbox-1"></label></div>
-                <input type="text" name="desc1" value="Bracelete de pérolas" readonly>
+                <input type="text" name="desc1" value="Bracelete de pérolas" readonly style="font-family: 'Prata', serif; color: #B26150; font-weight: bold;">
                 <p>Quantidade:</p>
                 <input min ="0" type="number" name="qtd1" value="0">
                 <p>Preço:</p>
@@ -106,7 +106,7 @@ for($i = 0; $i < 10; $i++){
                 <div class="custom-checkbox">
                     <input id="checkbox-2" type="checkbox" name="ch2">
                     <label for="checkbox-2"></label></div>
-                <input type="text" name="desc2" value="Pingente de coração" readonly>
+                <input type="text" name="desc2" value="Pingente de coração" readonly style="font-family: 'Prata', serif; color: #B26150; font-weight: bold;" >
                 <p>Quantidade:</p>
                 <input min ="0" type="number" name="qtd2" value="0">
                 <p>Preço:</p>
@@ -122,7 +122,7 @@ for($i = 0; $i < 10; $i++){
                 <div class="custom-checkbox">
                     <input id="checkbox-3" type="checkbox" name="ch3">
                     <label for="checkbox-3"></label></div>
-                <input type="text" name="desc3" value="Argola com brilhantes" readonly>
+                <input type="text" name="desc3" value="Argola com brilhantes" readonly style="font-family: 'Prata', serif; color: #B26150; font-weight: bold;">
                 <p>Quantidade:</p>
                 <input min ="0" type="number" name="qtd3" value="0">
                 <p>Preço:</p>
@@ -136,7 +136,7 @@ for($i = 0; $i < 10; $i++){
                 <div class="custom-checkbox">
                     <input id="checkbox-4" type="checkbox" name="ch4">
                     <label for="checkbox-4"></label></div>
-                <input type="text" name="desc4" value="Anel de ouro rose" readonly>
+                <input type="text" name="desc4" value="Anel de ouro rose" readonly style="font-family: 'Prata', serif; color: #B26150; font-weight: bold;">
                 <p>Quantidade:</p>
                 <input min ="0" type="number" name="qtd4" value="0">
                 <p>Preço:</p>
@@ -150,7 +150,7 @@ for($i = 0; $i < 10; $i++){
                 <div class="custom-checkbox">
                     <input id="checkbox-5" type="checkbox" name="ch5">
                     <label for="checkbox-5"></label></div>
-                <input type="text" name="desc5" value="Colar Lua e estrelas" readonly>
+                <input type="text" name="desc5" value="Colar Lua e estrelas" readonly style="font-family: 'Prata', serif; color: #B26150; font-weight: bold;">
                 <p>Quantidade:</p>
                 <input min ="0" type="number" name="qtd5" value="0">
                 <p>Preço:</p>
@@ -166,7 +166,7 @@ for($i = 0; $i < 10; $i++){
                 <div class="custom-checkbox">
                     <input id="checkbox-6" type="checkbox" name="ch6">
                     <label for="checkbox-6"></label></div>
-                <td><input type="text" name="desc6" value="Bracelete de brilhantes" readonly>
+                <td><input type="text" name="desc6" value="Bracelete de brilhantes" readonly style="font-family: 'Prata', serif; color: #B26150; font-weight: bold;">
                 <p>Quantidade:</p>
                 <td><input min ="0" type="number" name="qtd6" value="0">
                 <p>Preço:</p>
@@ -180,7 +180,7 @@ for($i = 0; $i < 10; $i++){
                 <div class="custom-checkbox">
                     <input id="checkbox-7" type="checkbox" name="ch7">
                     <label for="checkbox-7"></label></div>
-                <input type="text" name="desc7" value="Colar de estrela" readonly>
+                <input type="text" name="desc7" value="Colar de estrela" readonly style="font-family: 'Prata', serif; color: #B26150; font-weight: bold;">
                 <p>Quantidade:</p>
                 <input min ="0" type="number" name="qtd7" value="0">
                 <p>Preço:</p>
@@ -194,7 +194,7 @@ for($i = 0; $i < 10; $i++){
                 <div class="custom-checkbox">
                     <input id="checkbox-8" type="checkbox" name="ch8">
                     <label for="checkbox-8"></label></div>
-                <input type="text" name="desc8" value="Brinco de esfera" readonly>
+                <input type="text" name="desc8" value="Brinco de esfera" readonly style="font-family: 'Prata', serif; color: #B26150; font-weight: bold;">
                 <p>Quantidade:</p>
                 <input min ="0" type="number" name="qtd8" value="0">
                 <p>Preço:</p>
