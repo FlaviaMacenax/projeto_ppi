@@ -46,7 +46,7 @@
             padding: 20px 30px;
             width: 50%;
             border-radius: 15px;
-            color:#CFE0BC;
+            color: #E0F6C8;
             box-shadow: 5px 5px 2px #B26150;
             display: flex;
             justify-content: center;

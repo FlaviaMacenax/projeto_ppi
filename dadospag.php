@@ -63,6 +63,7 @@ if(isset($_POST['pagar'])) {
             justify-content: center;
             align-items: center;
             margin-left: 215px;
+            color:#3D3D3D;
         }
 
         .img-box{
@@ -107,6 +108,33 @@ if(isset($_POST['pagar'])) {
             font-size: 18px;
         }
 
+        .icon{
+            margin-right: 8px;
+        }
+
+        .pag-box{
+            background-color: rgba(255, 255, 255, 0.35);
+            backdrop-filter: blur(40px);
+            padding: 30px 40px;
+            border-radius: 12px;
+            color:#3D3D3D;
+            width: 65%;
+            height: 350px;
+            display: flex;
+            justify-content: center; 
+            align-items: center;
+            margin-left: 220px;
+        }
+
+        .pag-box h2{
+            font-size: 30px;
+            color: #BB7C73;
+            margin-top: 15px;
+            margin-bottom: 25px;
+            display: flex;
+            justify-content: center; 
+            align-items: center;
+        }
 
     </style>
 </head>
@@ -150,34 +178,45 @@ if(isset($_POST['pagar'])) {
         </div>
             
 <br>
+
+        <div class="pag-box">
         <form action="dadospag.php" method="post">
-        <h2><i class="fa-solid fa-dollar-sign fa-beat"></i>Dados do pagamento</h2>
-    
-        <p>#</p>
-        <p>Métodos de pagamento</p>
-        <p>Dados da Cobrança</p>
-
-        <input type = "radio" name = "metpag" value = "deb-avista">
-        <p>Débito à Vista</p>
-        <p>Número do Cartão</p>
-        <input type = "text" name = "numcartao-avista">
-
-        <input type = "radio" name = "metpag" value = "credito">
-        <p>Crédito à Vista</p>
-        <p>Número do Cartão</p>
-        <input type = "text" name = "numcartao-credito">
-
-        <input type = "radio" name = "metpag" value = "pix">
-        <p>PIX</p>
-        <p>Número do Pix</p>
-        <p>h93u-28rb-24bd-h38v</p>
-
-        <p>Valor Total:</p>
-        <p><?php echo $valorTotal; ?></p>
-
-       <input type="submit" name="pagar" value="Pagar">
-
-</form>
+        <h2><i class="fa-solid fa-dollar-sign fa-beat icon"></i>Dados do pagamento</h2>
+        <table>
+            <tr>
+                <th>✔</th>
+                <th>Métodos de Pagamento</th>
+                <th colspan = "2">Dados da Cobrança</th>
+            </tr>
+            <tr>
+                <td><input type = "radio" name = "metpag" value = "deb-avista"></td>
+                <td>Débito à Vista</td>
+                <td>Número do Cartão</td>
+                <td><input type = "text" name = "numcartao-avista"></td>
+            </tr>
+            <tr>
+                <td><input type = "radio" name = "metpag" value = "credito"></td>
+                <td>Crédito à Vista</td>
+                <td>Número do Cartão</td>
+                <td><input type = "text" name = "numcartao-credito"></td>
+            </tr>
+            <tr>
+                <td><input type = "radio" name = "metpag" value = "pix"></td>
+                <td>PIX</td>
+                <td>Número do Pix</td>
+                <td>h93u-28rb-24bd-h38v</td>
+            </tr>
+            <tr>
+                <th colspan="2"></th>
+                <th>Valor Total:</th>
+                <th><?php echo $valorTotal; ?></th>
+            </tr>
+            <tr>
+                <td colspan="4"><input type="submit" name="pagar" value="Pagar"></td>
+            </tr>
+        </table>
+        </form>
+</div>
 
 <!--Rodapé-->
 <footer>
